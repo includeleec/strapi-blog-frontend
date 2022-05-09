@@ -7,7 +7,7 @@ import Seo from "../../components/seo"
 import { getStrapiMedia } from "../../lib/media"
 
 const Article = ({ article, categories }) => {
-  const imageUrl = getStrapiMedia(article.attributes.image)
+  // const imageUrl = getStrapiMedia(article.attributes.image)
 
   const seo = {
     metaTitle: article.attributes.title,
@@ -20,12 +20,9 @@ const Article = ({ article, categories }) => {
     <Layout categories={categories.data}>
       <Seo seo={seo} />
       <div
-        id="banner"
-        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-        data-src={imageUrl}
-        data-srcset={imageUrl}
-        data-uk-img
+        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
       >
+        <NextImage image={article.attributes.image} />
         <h1>{article.attributes.title}</h1>
       </div>
       <div className="uk-section">
