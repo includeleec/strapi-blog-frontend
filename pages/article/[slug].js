@@ -19,9 +19,7 @@ const Article = ({ article, categories }) => {
   return (
     <Layout categories={categories.data}>
       <Seo seo={seo} />
-      <div
-        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark"
-      >
+      <div>
         <NextImage image={article.attributes.image} />
         <h1>{article.attributes.title}</h1>
       </div>
