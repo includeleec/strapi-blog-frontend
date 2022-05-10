@@ -4,7 +4,7 @@
 const nextConfig = {
   images: {
     loader: "default",
-    domains: ["nrm86mk7shfsr31tui1ckn3qbc.akash-la-1.maxihost.com"],
+    domains: ["strapi.4everland.store"],
   },
 }
 
